@@ -1,0 +1,88 @@
+import 
+
+void main() {
+  String frase = "Hello World";
+  
+  print(frase);
+  
+  int idade = 10;
+  
+  print("Ano que vem, vou fazer ${idade + 1} anos.");
+  
+  double preco = 6.19;
+  
+  bool aprovado = true;
+  
+  dynamic valor_dinamico = 10;
+  valor_dinamico = "Hello world";
+  
+  const valor_fixo = 100;   //sempre possui valor 100  
+  //valor_fixo = 0;         //erro
+  
+  final fixo;     //declara constante sem inicializar 
+  
+  fixo = 123;     //inicializa alguma vez e você não pode alterar ele
+  //fixo = 246;     //ERRO
+  
+  if(media_final >= 60 && presenca >= 75){
+      print("Parabéns você foi aprovado");
+  }
+  else{
+    print("Você foi reprovado");
+  }
+  
+  // operacao de leitura (teclado / usuario / HD)
+  // operacao de escrita
+  String ?input = stdin.readLineSync();
+  
+  if (input != null){
+    int num = int.parse(input);
+    print(num);
+  }
+  else{
+    print("Numero inválido");
+  }
+  aprovado = (media_final >= 60 && presenca >= 75) ? true : false;
+  print(aprovado);
+  
+  (expressao) ? print("aprovado") : print("reprovado");
+  
+  for(i = 0; i < 3; i++){
+    print(i);
+  }
+  
+  int i = 0;
+  while(i < 3){
+       print(i);
+       i++;
+  }
+  
+  do{
+    
+  }while(i < 3);
+  
+  List frutas = ['maça','pêra','laranja'];
+  frutas.add('abacaxi');
+  frutas.remove('pêra');
+  print(frutas);      // maça, laranja, abacaxi
+  frutas.insert(1, 'abacate');
+  print(frutas);      // maça, abacate, laranja, abacaxi
+  
+  Map nomeIdades = {
+      'Maria': 22,
+      'João': 30,
+      'Jose': 28, 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
